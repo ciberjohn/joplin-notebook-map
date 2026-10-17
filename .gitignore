@@ -1,0 +1,22 @@
+# Secrets — never commit
+.env
+.env.*
+
+# ...but the template IS committed
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Docker
+*.log

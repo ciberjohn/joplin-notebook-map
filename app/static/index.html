@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joplin Notebook Map</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="topbar">
+    <div class="brand">
+      <span class="brand-mark">◈</span>
+      <span class="brand-name">Joplin Notebook Map</span>
+      <span id="status" class="status" title="Joplin REST API status"></span>
+    </div>
+    <div class="top-actions">
+      <input id="search" type="search" placeholder="Search the brain…" autocomplete="off" spellcheck="false">
+      <button id="refresh" title="Refresh tree and counts">⟳</button>
+    </div>
+  </header>
+
+  <main id="layout">
+    <section id="tree-pane" aria-label="Notebook tree">
+      <div id="tree"></div>
+    </section>
+
+    <section id="notes-pane" aria-label="Notes in notebook">
+      <div id="notes-header" class="pane-header"></div>
+      <div id="notes-list" class="list"></div>
+    </section>
+
+    <section id="preview-pane" aria-label="Note preview">
+      <div id="preview-header" class="pane-header"></div>
+      <article id="preview" class="preview"></article>
+    </section>
+  </main>
+
+  <script src="vendor/mermaid.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
